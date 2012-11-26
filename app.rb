@@ -43,7 +43,7 @@ end
 ### Actions
 
 get '/' do
-  @default_ids = scan_id(open('public/1000favs.txt', 'r').read).join("\n")
+  @default_ids = open('public/1000favs.txt', 'r').read
   slim :index
 end
 
