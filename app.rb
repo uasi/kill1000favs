@@ -56,11 +56,13 @@ post '/block' do
 end
 
 post '/r4s' do
-  ids = scan_id(params[:ids])
-  reported_users = twitter.report_spam(ids)
-  s = reported_users.size
-  flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
+  flash[:alert] = "Sorry, R4S mode is not working now."
   redirect '/'
+#   ids = scan_id(params[:ids])
+#   reported_users = twitter.report_spam(ids)
+#   s = reported_users.size
+#   flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
+#   redirect '/'
 end
 
 get '/lists/:name' do

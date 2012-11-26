@@ -19,7 +19,10 @@ body
       .row#flash-box
         .span4.offset4
           .alert.alert-success <a id="close-flash-box" class="close" href="#">&times;</a> #{flash[:notice]}
-
+    - elsif flash[:alert]
+      .row#flash-box
+        .span4.offset4
+          .alert.alert-block <a id="close-flash-box" class="close" href="#">&times;</a> #{flash[:alert]}
     - if logged_in
       .row
         .span12
