@@ -1,0 +1,50 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    faraday (0.8.4)
+      multipart-post (~> 1.1)
+    hashie (1.2.0)
+    multi_json (1.3.6)
+    multipart-post (1.1.5)
+    oauth (0.4.7)
+    omniauth (1.1.1)
+      hashie (~> 1.2)
+      rack
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-twitter (0.0.13)
+      multi_json (~> 1.3)
+      omniauth-oauth (~> 1.0)
+    rack (1.4.1)
+    rack-protection (1.2.0)
+      rack
+    simple_oauth (0.1.9)
+    sinatra (1.3.3)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
+    slim (1.3.4)
+      temple (~> 0.5.5)
+      tilt (~> 1.3.3)
+    temple (0.5.5)
+    tilt (1.3.3)
+    twitter (4.3.0)
+      faraday (~> 0.8)
+      multi_json (~> 1.3)
+      simple_oauth (~> 0.1.6)
+    watchr (0.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  omniauth
+  omniauth-twitter
+  sinatra
+  sinatra-flash
+  slim
+  twitter
+  watchr
