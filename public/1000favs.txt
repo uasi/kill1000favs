@@ -18,6 +18,7 @@ favGazo
 
 # Omoshiro bots
 1000favs_
+1000favs_BOT
 apple29ap
 UniqueTwit_bot
 namidame_bot
