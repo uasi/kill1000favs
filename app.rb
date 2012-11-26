@@ -56,13 +56,18 @@ post '/block' do
 end
 
 post '/r4s' do
-  flash[:alert] = "Sorry, R4S mode is not working now."
+  begin
+    ids = scan_id(params[:ids])
+    # reported_users = twitter.report_spam(ids) # Broken with twitter-4.3.0
+    reported_users = twitter.send(:threaded_users_from_response, :post, '/1.1/users/report_spam.json', ids)
+    s = reported_users.size
+    flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
+  rescue Twitter::Error::NotFound
+    flash[:alert] = 'Sorry, R4S mode is not working now.'
+  rescue => e
+    flash[:alert] = 'Unknown error occurred.' + e.inspect
+  end
   redirect '/'
-#   ids = scan_id(params[:ids])
-#   reported_users = twitter.report_spam(ids)
-#   s = reported_users.size
-#   flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
-#   redirect '/'
 end
 
 get '/lists/:name' do
