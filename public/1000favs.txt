@@ -3,6 +3,7 @@
 500favs
 1000favs
 1000Retweets
+3000Retweets
 favGazo
 
 # 1000fav family
@@ -17,40 +18,88 @@ favGazo
 3000favo
 
 # Copipe bots
+1000fav_t
 1000favs_
 1000favs_BOT
-apple29ap
-UniqueTwit_bot
-namidame_bot
-omoboibotbot
-wwww_wwww_wwww
-wwwww_BOT
-omoshiro_kopipe
-warota_bot_ww
-tweet_omoro
-riem1987
-imgviewer
+10fucking_laugh
+777favs
 Copy_Paste_Fan
-damet_fav
-warai3
-pupupubot
-_omoshirobot
+IMIKOWA_BOT
+ManyFavs
+RT_topic
+ReTweetsokuho
+Shoten_Ohgiri
+Star_Rtweet
+Tweet_ro_bot
+UniqueTwit_bot
 _bot15
-wwwwbot
-wara_RT
-omosiroitub_bot
-ninkittar_bot
-niyari_bot15
-ninnki_bot
-omoboibotbot
+_neta_bot
+_omoshirobot
 afman_ken
-
-# Copipe bots (from 2ch and other sites)
-# wwwwww_bot
-# CopyPaste_bot
-# bot_wwww
+afrisk01
+amagabana
+apple29ap
+asphakko
+copipe
+cupppet
+damet_fav
+derasuke_bot
+extraextra55
+f26ze7_bot
+favo_radar
+favotwi
+fisichaln
+gerijugemu_bot
+gldnphx001
+homoe_moe
+imgviewer
+kamui830
+keyblueboard
+kireenex
+kopipedoujou
+lodonianx
+manyfavs_tweets
+meigenbotkk
+namidame_bot
+natume22
+ninkittar_bot
+ninnki_bot
+niyari_bot15
+nono0005
+nonslip_tweet
+omoboibotbot
+omoro0120
+omoshiro_kopipe
+omoshiro_robot
+omosiroitub_bot
+omykrt
+orangerangefun
+pupupubot
+riem1987
+rixxtai
+romahenka
+shisaisya
+tinger7
+tonaritwit_bot
+tweet_omoro
+wara_RT
+warai3
+warota_bot_ww
+warotwi
+wataruxru
+wwwpics_BOT
+wwww_bot
+wwww_wwww_wwww
+wwwwbot
+wwwww_BOT
+wwwwww_bot
+yakudachi_tw
+yorondone
+yuuekibot
 
 # Pakuri tweeters
+t_lav95
+shiraginu
+skytree_baito
 # inohohon
 # nyarukobot
-
