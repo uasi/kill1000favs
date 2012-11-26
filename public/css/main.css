@@ -1,13 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Tienne:900);
 
-.hero-unit h1 {
+.hero-unit {
   text-align: center;
-  font-family: "Tienne", serif;
-  font-size: 72pt;
 }
 
-.profile {
-  text-align: center;
+.hero-unit h1 {
+  font-family: "Tienne", serif;
+  font-size: 72pt;
 }
 
 #ids {
