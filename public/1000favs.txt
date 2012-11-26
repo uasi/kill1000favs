@@ -16,7 +16,7 @@ favGazo
 2000favo
 3000favo
 
-# Omoshiro bots
+# Copipe bots
 1000favs_
 1000favs_BOT
 apple29ap
@@ -27,7 +27,30 @@ wwww_wwww_wwww
 wwwww_BOT
 omoshiro_kopipe
 warota_bot_ww
+tweet_omoro
+riem1987
+imgviewer
+Copy_Paste_Fan
+damet_fav
+warai3
+pupupubot
+_omoshirobot
+_bot15
+wwwwbot
+wara_RT
+omosiroitub_bot
+ninkittar_bot
+niyari_bot15
+ninnki_bot
+omoboibotbot
+afman_ken
+
+# Copipe bots (from 2ch and other sites)
+# wwwwww_bot
+# CopyPaste_bot
+# bot_wwww
 
 # Pakuri tweeters
 inohohon
 nyarukobot
+
