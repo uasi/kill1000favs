@@ -13,6 +13,8 @@ body
       h1 Kill 1000favs
       - if logged_in
         p.profile Signed in as <strong><a href="http://twitter.com/#{session[:nickname]}" target="_blank">@#{session[:nickname]}</strong></a> <small>(<a class="muted" href="/logout">sign out</a>)</small>
+      - else
+        p Block those plagiarists with a single click!
     - if flash[:notice]
       .row#flash-box
         .span4.offset4
