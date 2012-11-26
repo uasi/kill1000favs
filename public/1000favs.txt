@@ -51,6 +51,6 @@ afman_ken
 # bot_wwww
 
 # Pakuri tweeters
-inohohon
-nyarukobot
+# inohohon
+# nyarukobot
 
