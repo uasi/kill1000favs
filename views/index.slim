@@ -23,13 +23,13 @@ body
     - if logged_in
       .row
         .span12
-          form.form-horizontal.well method="POST" action="/block"
+          form.form-horizontal.well method="POST" action="/#{r4s ? 'r4s' : 'block'}"
             .control-group
-              label.control-label for="ids" IDs to block
+              label.control-label for="ids" IDs to #{r4s ? 'report for spam' : 'block'}
               .controls
                 textarea#ids.input-xxlarge name="ids"#{@default_ids}
             .form-actions
-              button#submit-ids.btn.btn-danger.btn-large type="submit" <i class="icon-warning-sign icon-white"></i> Block
+              button#submit-ids.btn.btn-danger.btn-large type="submit" <i class="icon-warning-sign icon-white"></i> #{r4s ? 'Report for spam' : 'Block'}
     - else
       .row style="min-height: 100px"
         .span12 style="text-align: center"

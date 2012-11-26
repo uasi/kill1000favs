@@ -17,6 +17,10 @@ helpers do
   def logged_in
     !!session[:uid]
   end
+
+  def r4s
+    params[:r4s] == '1'
+  end
 end
 
 def auth
@@ -48,6 +52,14 @@ post '/block' do
   blocked_users = twitter.block(ids)
   s = blocked_users.size
   flash[:notice] = "You blocked #{s} user#{s == 1 ? '' : 's'}."
+  redirect '/'
+end
+
+post '/r4s' do
+  ids = scan_id(params[:ids])
+  reported_users = twitter.report_spam(ids)
+  s = reported_users.size
+  flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
   redirect '/'
 end
 
