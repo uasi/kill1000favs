@@ -79,7 +79,7 @@ omoshiro_robot
 omosiroitub_bot
 omykrt
 orangerangefun
-past250favsBOT
+# past250favsBOT (suspended)
 pupupubot
 riem1987
 rixxtai
