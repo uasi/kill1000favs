@@ -1,5 +1,6 @@
 source :rubygems
 
+gem 'thin'
 gem 'sinatra'
 gem 'sinatra-flash', require: 'sinatra/flash'
 gem 'slim'
