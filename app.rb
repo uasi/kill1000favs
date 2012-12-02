@@ -58,8 +58,7 @@ end
 post '/r4s' do
   begin
     ids = scan_id(params[:ids])
-    # reported_users = twitter.report_spam(ids) # Broken with twitter-4.3.0
-    reported_users = twitter.send(:threaded_users_from_response, :post, '/1.1/users/report_spam.json', ids)
+    reported_users = twitter.report_spam(ids)
     s = reported_users.size
     flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
   rescue Twitter::Error::NotFound
