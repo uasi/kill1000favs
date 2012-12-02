@@ -4,7 +4,7 @@ gem 'thin'
 gem 'sinatra'
 gem 'sinatra-flash', require: 'sinatra/flash'
 gem 'slim'
-gem 'twitter'
+gem 'twitter', '>= 4.4.0'
 gem 'omniauth'
 gem 'omniauth-twitter'
 
