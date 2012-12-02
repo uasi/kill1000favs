@@ -3,8 +3,6 @@ Bundler.require
 
 ### Settings
 
-Faraday.default_adapter = :em_synchrony
-
 enable :logging
 enable :sessions
 

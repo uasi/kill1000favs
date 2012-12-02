@@ -69,7 +69,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  faraday
   omniauth
   omniauth-twitter
   sinatra
