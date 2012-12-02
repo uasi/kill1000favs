@@ -48,23 +48,31 @@ get '/' do
 end
 
 post '/block' do
-  ids = scan_id(params[:ids])
-  blocked_users = twitter.block(ids)
-  s = blocked_users.size
-  flash[:notice] = "You blocked #{s} user#{s == 1 ? '' : 's'}."
+  begin
+    ids = scan_id(params[:ids])
+    s = 0
+    ids.each_slice(100) do |sliced_ids|
+      s += twitter.block(sliced_ids).size
+    end
+    flash[:notice] = "You blocked #{s} user#{s == 1 ? '' : 's'}."
+  rescue => e
+    request.logger.error '/r4s ' + e.inspect
+    flash[:alert] = 'Unknown error occurred.'
+  end
   redirect '/'
 end
 
 post '/r4s' do
   begin
     ids = scan_id(params[:ids])
-    reported_users = twitter.report_spam(ids)
-    s = reported_users.size
+    s = 0
+    ids.each_slice(100) do |sliced_ids|
+      s += twitter.report_spam(sliced_ids).size
+    end
     flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
-  rescue Twitter::Error::NotFound
-    flash[:alert] = 'Sorry, R4S mode is not working now.'
   rescue => e
-    flash[:alert] = 'Unknown error occurred.' + e.inspect
+    request.logger.error '/r4s ' + e.inspect
+    flash[:alert] = 'Unknown error occurred.'
   end
   redirect '/'
 end
