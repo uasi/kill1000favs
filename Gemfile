@@ -3,6 +3,7 @@ source :rubygems
 gem 'thin'
 gem 'sinatra'
 gem 'sinatra-flash', require: 'sinatra/flash'
+gem 'sinatra-synchrony', require: 'sinatra/synchrony'
 gem 'slim'
 gem 'twitter'
 gem 'omniauth'
