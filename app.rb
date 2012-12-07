@@ -56,7 +56,7 @@ post '/block' do
     end
     flash[:notice] = "You blocked #{s} user#{s == 1 ? '' : 's'}."
   rescue => e
-    request.logger.error '/r4s ' + e.inspect
+    request.logger.error '/block ' + e.inspect
     flash[:alert] = 'Unknown error occurred.'
   end
   redirect '/'
