@@ -52,7 +52,7 @@ post '/block' do
     ids = scan_id(params[:ids])
     s = 0
     ids.each_slice(100) do |sliced_ids|
-      s += twitter.block(sliced_ids).size
+      s += twitter.block(*sliced_ids).size
     end
     flash[:notice] = "You blocked #{s} user#{s == 1 ? '' : 's'}."
   rescue => e
@@ -67,7 +67,7 @@ post '/r4s' do
     ids = scan_id(params[:ids])
     s = 0
     ids.each_slice(100) do |sliced_ids|
-      s += twitter.report_spam(sliced_ids).size
+      s += twitter.report_spam(*sliced_ids).size
     end
     flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
   rescue => e
