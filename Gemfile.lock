@@ -1,8 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    daemons (1.1.9)
-    eventmachine (1.0.0)
     faraday (0.8.4)
       multipart-post (~> 1.1)
     hashie (1.2.0)
@@ -18,6 +16,8 @@ GEM
     omniauth-twitter (0.0.14)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
+    puma (1.6.3)
+      rack (~> 1.2)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -32,10 +32,6 @@ GEM
       temple (~> 0.5.5)
       tilt (~> 1.3.3)
     temple (0.5.5)
-    thin (1.5.0)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
     tilt (1.3.3)
     twitter (4.4.0)
       faraday (~> 0.8)
@@ -49,9 +45,9 @@ PLATFORMS
 DEPENDENCIES
   omniauth
   omniauth-twitter
+  puma
   sinatra
   sinatra-flash
   slim
-  thin
   twitter (>= 4.4.0)
   watchr

@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'thin'
+gem 'puma'
 gem 'sinatra'
 gem 'sinatra-flash', require: 'sinatra/flash'
 gem 'slim'
