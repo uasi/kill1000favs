@@ -9,7 +9,7 @@ favGazo
 # 1000fav family
 500fav
 1000fav
-1000retweet
+1000Retweet
 3000retweet
 
 # 1500favo family
@@ -19,7 +19,7 @@ favGazo
 
 # Copipe bots
 1000fav_t
-1000favbot
+# 1000favbot (suspended)
 1000favs_
 1000favs_BOT
 10fucking_laugh
@@ -41,7 +41,7 @@ _neta_bot
 _omoshirobot
 afman_ken
 afrisk01
-amagabana
+# amagabana (suspended)
 apple29ap
 asphakko
 copipe
@@ -49,7 +49,7 @@ cupppet
 damet_fav
 derasuke_bot
 extraextra55
-f26ze7_bot
+# f26ze7_bot (suspended)
 favo_radar
 favotwi
 fisichaln
@@ -67,7 +67,6 @@ manyfavs_tweets
 meigenbotkk
 mhiro0715
 namidame_bot
-natume22
 ninkittar_bot
 ninnki_bot
 niyari_bot15
@@ -77,7 +76,7 @@ omoboibotbot
 omoro0120
 omoshiro_kopipe
 omoshiro_robot
-omosiroitub_bot
+# omosiroitub_bot (suspended)
 omykrt
 orangerangefun
 # past250favsBOT (suspended)
