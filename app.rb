@@ -107,3 +107,7 @@ get '/logout' do
   session[:oauth_secret] = nil
   redirect '/'
 end
+
+error do
+  'Internal Server Error'
+end
