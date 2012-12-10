@@ -40,6 +40,10 @@ def scan_id(s)
   s.scan(/^\s*@?([a-zA-Z0-9_]+)/).map {|a| a.first }
 end
 
+def take_existing_ids(ids)
+  twitter.users(ids).map(&:screen_name)
+end
+
 ### Actions
 
 get '/' do
@@ -49,7 +53,7 @@ end
 
 post '/block' do
   begin
-    ids = scan_id(params[:ids])
+    ids = take_existing_ids(scan_id(params[:ids]).uniq)
     s = 0
     ids.each_slice(100) do |sliced_ids|
       s += twitter.block(*sliced_ids).size
@@ -64,7 +68,7 @@ end
 
 post '/r4s' do
   begin
-    ids = scan_id(params[:ids])
+    ids = take_existing_ids(scan_id(params[:ids]).uniq)
     s = 0
     ids.each_slice(100) do |sliced_ids|
       s += twitter.report_spam(*sliced_ids).size
