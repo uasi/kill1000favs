@@ -41,7 +41,7 @@ def scan_id(s)
 end
 
 def take_existing_ids(ids)
-  twitter.users(ids).map(&:screen_name)
+  twitter.users(ids, include_entities: false).map(&:screen_name)
 end
 
 ### Actions
