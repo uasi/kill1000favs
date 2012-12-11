@@ -18,6 +18,7 @@ favGazo
 3000favo
 
 # Copipe bots
+10000RT
 1000fav_t
 # 1000favbot (suspended)
 1000favs_
@@ -102,6 +103,161 @@ wwwwww_bot
 yakudachi_tw
 yorondone
 yuuekibot
+
+# From https://twitter.com/MyoyoShinnyo/copy-paste-bot-garbage/members
+# *1: user who seems not to steal other users' tweets
+# *2: non-bot user
+1000favs_rikei
+300favs
+40409990warawar
+5000RT
+A_jokes_bot
+Bo_bo_bot
+Bot_popularity_
+Bot_wit
+CopyPaste_bot
+CureCure2
+DailyFavbot
+GoBackBot
+Kopipe_bot_
+# Kotonoha_bot1 (*1)
+Nana_bot_remind
+Nekoo00_bot
+RTRT_pic
+TOTO_TOHSAN
+TwiLIFE2525
+Yakudachi_BOT
+_bot03533736
+_bot47
+_pmegfav
+aauadress
+# ainokunii_bot (*1)
+# akirbySNPI_bot (*1)
+# americanjokebot (*1)
+ane_fav
+aofox5152_bot
+arsc_bot
+author_child_ju
+av_idol_ex
+ayakazememo
+bakaukeyo
+best_meigen
+besttweetcom
+# bigwave_bot (*1)
+bot_wwww
+botokinir
+chai0715
+copyMatome
+crooz1978
+doropandtanaka
+favorite_words_
+fiagt1tm
+funnychan_bot
+gekiwarai_bot
+gensentweet
+get_smiles
+gutscat
+gyahahaha_bot
+hannyag_bot
+himatubushijp
+hirameki_box
+homooh_yeah
+itscrazy_bot
+jackpot5151
+jetbotmax
+jk_mio
+kaorin704
+kinafav
+# kirenennko3 (*2)
+konakonakonata2
+kopipe_bot
+kuinatoudou01
+lessthanhuman81
+likemiobot
+likemiobot2
+# makuramama27 (*2)
+many_faved_jp
+mayubotchan
+meigen_memo_bot
+meigenbotter
+moeru_bot
+mudantensai_bot
+mumeru81
+naka1978_001
+niyaniyaw
+nobuko3895
+nolaugh_bot
+nyarukobot
+oldomaban
+omorobot1024
+omoronet
+omoshiro_tweets
+omoshiroihanasi
+omoshirotishiki
+omoshirotrend
+omoshirotsu_bot
+omoshirotter
+omoshirotw
+omosi_robot
+omosiro_tweet
+omosiroi_bot
+omosiropopobot
+omosirotweet
+orenobotjp
+owarai4
+pakuri_neta_bot
+# pio_tann1212 (*2)
+ppc_bananadesk
+rennai_new
+rennsai555_bot
+rinan_tweet
+rinrinrin66
+risadayooooo
+rom_amt
+sakatayuzi524
+sensebot00
+siranakattakoto
+smile_bot001
+suberan874_bot
+takuhiro0912
+tanaken450
+tanoshiiii_bot
+tatsuya_racer
+theyoshihiro8
+toku_neta
+tomo46_bot
+toms148
+toptweet_ja
+trac_light
+trendmastar
+trivia_bot_
+trophyTweets
+tt7cm78u
+uniquewww_bot
+uwaaaa_bot
+wahaha_bot
+waraemasuka12
+warai_hahahappy
+warataww_bot
+warattara_bot
+warattawwwbot
+warattemotabot
+waratubu_bot
+waratui
+warautanpopo
+warawaraRT
+warawase_bot7
+www_copipe_bot
+wwwwwwBOT
+wwwwwwww_BOT
+wwwwwwwwara
+yagamix55
+yamitrend1
+yokotaxte
+yoshihironyanko
+yuuekitwi
+yuuekitwit_bot
+# yuzi07090710 (*2)
 
 # Pakuri tweeters
 t_lav95
