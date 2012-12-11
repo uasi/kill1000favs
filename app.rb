@@ -11,6 +11,13 @@ use OmniAuth::Builder do
                      ENV['TWITTER_CONSUMER_SECRET']
 end
 
+# Twitter gem introduces Enumerable#threaded_map, which doesn't work well
+# with threaded server like Puma.
+# We replace that with Enumerable#map as a workaround.
+class Array
+  alias :threaded_map :map
+end
+
 ### Helpers and utils
 
 helpers do
@@ -62,9 +69,12 @@ post '/block' do
       s += twitter.block(*sliced_ids).size
     end
     flash[:notice] = "You blocked #{s} user#{s == 1 ? '' : 's'}."
-  rescue => e
+  rescue Twitter::Error => e
     request.logger.error '/block ' + e.inspect
-    flash[:alert] = 'Unknown error occurred.'
+    flash[:alert] = e.message + '.'
+    if e.message =~ /You are over the limit/
+      flash[:alert] += ' Try again later (15 minutes or more is good).'
+    end
   end
   redirect '/'
 end
@@ -78,9 +88,12 @@ post '/r4s' do
       s += twitter.report_spam(*sliced_ids).size
     end
     flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
-  rescue => e
+  rescue Twitter::Error => e
     request.logger.error '/r4s ' + e.inspect
-    flash[:alert] = 'Unknown error occurred.'
+    flash[:alert] = e.message + '.'
+    if e.message =~ /You are over the limit/
+      flash[:alert] += ' Try again later (15 minutes or more is good).'
+    end
   end
   redirect '/'
 end
