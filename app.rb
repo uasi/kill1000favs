@@ -63,7 +63,6 @@ post '/block' do
     end
     flash[:notice] = "You blocked #{s} user#{s == 1 ? '' : 's'}."
   rescue => e
-    raise e
     request.logger.error '/block ' + e.inspect
     flash[:alert] = 'Unknown error occurred.'
   end
