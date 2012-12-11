@@ -40,8 +40,10 @@ def scan_id(s)
   s.scan(/^\s*@?([a-zA-Z0-9_]+)/).map {|a| a.first }
 end
 
-def take_existing_ids(ids)
-  twitter.users(ids, include_entities: false).map(&:screen_name)
+def take_existing_ids(ids, opts = {})
+  users = twitter.users(ids, include_entities: false)
+  users.reject!(&:following) if opts[:drop_friends]
+  users.map(&:screen_name)
 end
 
 ### Actions
@@ -53,13 +55,15 @@ end
 
 post '/block' do
   begin
-    ids = take_existing_ids(scan_id(params[:ids]).uniq)
+    ids = scan_id(params[:ids]).uniq
+    ids = take_existing_ids(ids, drop_friends: params[:forgive_friends])
     s = 0
     ids.each_slice(100) do |sliced_ids|
       s += twitter.block(*sliced_ids).size
     end
     flash[:notice] = "You blocked #{s} user#{s == 1 ? '' : 's'}."
   rescue => e
+    raise e
     request.logger.error '/block ' + e.inspect
     flash[:alert] = 'Unknown error occurred.'
   end
@@ -68,7 +72,8 @@ end
 
 post '/r4s' do
   begin
-    ids = take_existing_ids(scan_id(params[:ids]).uniq)
+    ids = scan_id(params[:ids]).uniq
+    ids = take_existing_ids(ids, drop_friends: params[:forgive_friends])
     s = 0
     ids.each_slice(100) do |sliced_ids|
       s += twitter.report_spam(*sliced_ids).size

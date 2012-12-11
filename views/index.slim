@@ -31,6 +31,9 @@ body
               label.control-label for="ids" IDs to #{r4s ? 'report for spam' : 'block'}
               .controls
                 textarea#ids.input-xxlarge name="ids"#{@default_ids}
+            .control-group
+              .controls
+                input.input-xxlarge type="checkbox" name="forgive_friends" value="1" checked="checked" &nbsp;Don't #{r4s ? 'report' : 'block'} users I am following
             .form-actions
               button#submit-ids.btn.btn-danger.btn-large type="submit" <i class="icon-warning-sign icon-white"></i> #{r4s ? 'Report for spam' : 'Block'}
     - else
