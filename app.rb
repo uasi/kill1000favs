@@ -1,5 +1,5 @@
-require 'bundler'
-Bundler.require
+require 'bundler/setup'
+Bundler.require *[:default, ENV['RACK_ENV']].compact
 
 ### Settings
 
@@ -9,6 +9,11 @@ enable :sessions
 use OmniAuth::Builder do
   provider :twitter, ENV['TWITTER_CONSUMER_KEY'],
                      ENV['TWITTER_CONSUMER_SECRET']
+end
+
+configure :development do
+  use BetterErrors::Middleware
+  BetterErrors.application_root = File.expand_path("..", __FILE__)
 end
 
 # Twitter gem introduces Enumerable#threaded_map, which doesn't work well
