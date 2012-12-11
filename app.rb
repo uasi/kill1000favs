@@ -52,12 +52,6 @@ def scan_id(s)
   s.scan(/^\s*@?([a-zA-Z0-9_]+)/).map {|a| a.first }
 end
 
-def take_existing_ids(ids, opts = {})
-  users = twitter.users(ids, include_entities: false)
-  users.reject!(&:following) if opts[:drop_friends]
-  users.map(&:screen_name)
-end
-
 ### Actions
 
 get '/' do
@@ -65,17 +59,23 @@ get '/' do
   slim :index
 end
 
-post '/block' do
+def do_block(report = false)
   begin
     ids = scan_id(params[:ids]).uniq
-    ids = take_existing_ids(ids, drop_friends: params[:forgive_friends])
-    s = 0
-    ids.each_slice(100) do |sliced_ids|
-      s += twitter.block(*sliced_ids).size
+    blocked_ids = Set.new(twitter.blocked_ids.ids)
+    users = twitter.users(ids, include_entities: false)
+    users.reject!(&:following) if params[:forgive_friends]
+    blocked, to_block = users.partition {|u| blocked_ids.include?(u.id) }
+    s = blocked.size
+    to_block.map(&:screen_name).each_slice(100) do |sliced_ids|
+      if report
+        s += twitter.report_spam(*sliced_ids).size
+      else
+        s += twitter.block(*sliced_ids).size
+      end
     end
-    flash[:notice] = "You blocked #{s} user#{s == 1 ? '' : 's'}."
+    flash[:notice] = "You #{report ? 'reported' : 'blocked'} #{s} user#{s == 1 ? '' : 's'}."
   rescue Twitter::Error => e
-    request.logger.error '/block ' + e.inspect
     flash[:alert] = e.message + '.'
     if e.message =~ /You are over the limit/
       flash[:alert] += ' Try again later (15 minutes or more is good).'
@@ -84,23 +84,12 @@ post '/block' do
   redirect '/'
 end
 
+post '/block' do
+  do_block(false)
+end
+
 post '/r4s' do
-  begin
-    ids = scan_id(params[:ids]).uniq
-    ids = take_existing_ids(ids, drop_friends: params[:forgive_friends])
-    s = 0
-    ids.each_slice(100) do |sliced_ids|
-      s += twitter.report_spam(*sliced_ids).size
-    end
-    flash[:notice] = "You reported #{s} user#{s == 1 ? '' : 's'} for spam."
-  rescue Twitter::Error => e
-    request.logger.error '/r4s ' + e.inspect
-    flash[:alert] = e.message + '.'
-    if e.message =~ /You are over the limit/
-      flash[:alert] += ' Try again later (15 minutes or more is good).'
-    end
-  end
-  redirect '/'
+  do_block(true)
 end
 
 get '/lists/:name' do
