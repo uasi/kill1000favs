@@ -72,7 +72,7 @@ ninkittar_bot
 ninnki_bot
 niyari_bot15
 nono0005
-nonslip_tweet
+# nonslip_tweet (suspended)
 omoboibotbot
 omoro0120
 omoshiro_kopipe
@@ -91,7 +91,6 @@ tonaritwit_bot
 tweet_omoro
 wara_RT
 warai3
-warota_bot_ww
 warotwi
 wataruxru
 wwwpics_BOT
@@ -122,10 +121,6 @@ GoBackBot
 Kopipe_bot_
 # Kotonoha_bot1 (*1)
 Nana_bot_remind
-Nekoo00_bot
-RTRT_pic
-TOTO_TOHSAN
-TwiLIFE2525
 Yakudachi_BOT
 _bot03533736
 _bot47
@@ -217,7 +212,7 @@ rom_amt
 sakatayuzi524
 sensebot00
 siranakattakoto
-smile_bot001
+# smile_bot001 (suspended)
 suberan874_bot
 takuhiro0912
 tanaken450
