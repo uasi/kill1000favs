@@ -43,6 +43,7 @@ _omoshirobot
 afman_ken
 afrisk01
 # amagabana (suspended)
+american_jokes
 apple29ap
 asphakko
 copipe
