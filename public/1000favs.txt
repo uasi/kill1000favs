@@ -31,7 +31,6 @@ Copy_Paste_Fan
 IMIKOWA_BOT
 ManyFavs
 RT_topic
-ReTweetsokuho
 Shoten_Ohgiri
 Star_Rtweet
 Tweet_ro_bot
@@ -60,7 +59,6 @@ gldnphx001
 goronishi33
 homoe_moe
 imgviewer
-kamui830
 keyblueboard
 kireenex
 kopipedoujou
@@ -70,12 +68,12 @@ meigenbotkk
 mhiro0715
 namidame_bot
 ninkittar_bot
-ninnki_bot
 niyari_bot15
 nono0005
 # nonslip_tweet (suspended)
 omoboibotbot
 omoro0120
+omoshiro___bot
 omoshiro_kopipe
 omoshiro_robot
 # omosiroitub_bot (suspended)
@@ -86,7 +84,6 @@ pupupubot
 riem1987
 rixxtai
 romahenka
-shisaisya
 tinger7
 tonaritwit_bot
 tweet_omoro
@@ -107,7 +104,6 @@ yuuekibot
 # From https://twitter.com/MyoyoShinnyo/copy-paste-bot-garbage/members
 # *1: user who seems not to steal other users' tweets
 # *2: non-bot user
-1000favs_rikei
 300favs
 40409990warawar
 5000RT
@@ -215,6 +211,7 @@ sensebot00
 siranakattakoto
 # smile_bot001 (suspended)
 suberan874_bot
+sunkist1019
 takuhiro0912
 tanaken450
 tanoshiiii_bot
