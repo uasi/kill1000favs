@@ -19,7 +19,6 @@ favGazo
 
 # Copipe bots
 10000RT
-1000fav_t
 # 1000favbot (suspended)
 1000favs_
 1000favs_BOT
@@ -75,7 +74,6 @@ omoboibotbot
 omoro0120
 omoshiro___bot
 omoshiro_kopipe
-omoshiro_robot
 # omosiroitub_bot (suspended)
 omykrt
 orangerangefun
@@ -161,7 +159,6 @@ jk_mio
 kaorin704
 kinafav
 # kirenennko3 (*2)
-konakonakonata2
 kopipe_bot
 kuinatoudou01
 lessthanhuman81
@@ -181,7 +178,6 @@ nobuko3895
 nolaugh_bot
 nyarukobot
 oldomaban
-omorobot1024
 omoronet
 omoshiro_tweets
 omoshiroihanasi
