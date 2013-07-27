@@ -1,5 +1,20 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
+# As of 2013-07-27, these gems do not officially support Ruby 2.0.0:
+# - sinatra-env 0.0.2
+# - sinatra-flash 0.3.0
+# - omniauth-twitter 1.0.0
+# - puma 2.4.0 (no mention in its document but it passes tests on 2.0.0)
+# - slim 2.0.0 (ditto)
+
+# and these do support 2.0:
+# - sinatra 1.4.0
+# - omniauth 1.1.4
+# - better_errors 0.9.0
+# - binding_of_caller 0.7.2
+
 gem 'puma', '~> 2.4'
 gem 'sinatra', '~> 1.4'
 gem 'sinatra-env'
