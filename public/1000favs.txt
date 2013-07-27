@@ -15,7 +15,6 @@ favGazo
 # 1500favo family
 1500favo
 2000favo
-3000favo
 
 # Copipe bots
 10000RT
@@ -23,7 +22,7 @@ favGazo
 1000favs_
 1000favs_BOT
 10fucking_laugh
-10second_bot
+# 10second_bot (suspended)
 123netAm
 777favs
 Copy_Paste_Fan
@@ -46,7 +45,6 @@ apple29ap
 asphakko
 copipe
 cupppet
-damet_fav
 derasuke_bot
 extraextra55
 # f26ze7_bot (suspended)
@@ -56,7 +54,6 @@ fisichaln
 gerijugemu_bot
 gldnphx001
 goronishi33
-homoe_moe
 imgviewer
 keyblueboard
 kireenex
@@ -89,11 +86,10 @@ wara_RT
 warai3
 warotwi
 wataruxru
-wwwpics_BOT
 wwww_bot
 wwww_wwww_wwww
 wwwwbot
-wwwww_BOT
+# wwwww_BOT (suspended)
 wwwwww_bot
 yakudachi_tw
 yorondone
@@ -102,7 +98,7 @@ yuuekibot
 # From https://twitter.com/MyoyoShinnyo/copy-paste-bot-garbage/members
 # *1: user who seems not to steal other users' tweets
 # *2: non-bot user
-300favs
+# 300favs (suspended)
 40409990warawar
 5000RT
 A_jokes_bot
@@ -128,13 +124,12 @@ ane_fav
 aofox5152_bot
 arsc_bot
 author_child_ju
-av_idol_ex
+# av_idol_ex (suspended)
 ayakazememo
-bakaukeyo
-best_meigen
+# bakaukeyo (suspended)
 besttweetcom
 # bigwave_bot (*1)
-bot_wwww
+# bot_wwww (suspended)
 botokinir
 chai0715
 copyMatome
@@ -150,23 +145,19 @@ gutscat
 gyahahaha_bot
 hannyag_bot
 himatubushijp
-hirameki_box
-homooh_yeah
+# homooh_yeah (suspended)
 itscrazy_bot
-jackpot5151
 jetbotmax
 jk_mio
 kaorin704
 kinafav
 # kirenennko3 (*2)
 kopipe_bot
-kuinatoudou01
 lessthanhuman81
 likemiobot
 likemiobot2
 # makuramama27 (*2)
 many_faved_jp
-mayubotchan
 meigen_memo_bot
 meigenbotter
 moeru_bot
@@ -188,7 +179,6 @@ omoshirotter
 omoshirotw
 omosi_robot
 omosiro_tweet
-omosiroi_bot
 omosiropopobot
 omosirotweet
 orenobotjp
@@ -212,7 +202,6 @@ takuhiro0912
 tanaken450
 tanoshiiii_bot
 tatsuya_racer
-theyoshihiro8
 toku_neta
 tomo46_bot
 toms148
@@ -220,13 +209,12 @@ toptweet_ja
 trac_light
 trendmastar
 trivia_bot_
-trophyTweets
+# trophyTweets (suspended)
 tt7cm78u
 uniquewww_bot
 uwaaaa_bot
 wahaha_bot
 waraemasuka12
-warai_hahahappy
 warataww_bot
 warattara_bot
 warattawwwbot
