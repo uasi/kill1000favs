@@ -14,7 +14,7 @@ body
       - if logged_in
         p.profile Signed in as <strong><a href="http://twitter.com/#{session[:nickname]}" target="_blank">@#{session[:nickname]}</strong></a> <small>(<a class="muted" href="/logout">sign out</a>)</small>
       - else
-        p Block those plagiarists with a single click!
+        p #{t.site.description}
     - if flash[:notice]
       .row#flash-box
         .span4.offset4
@@ -28,14 +28,14 @@ body
         .span12
           form.form-horizontal.well method="POST" action="/#{r4s ? 'r4s' : 'block'}"
             .control-group
-              label.control-label for="ids" IDs to #{r4s ? 'report for spam' : 'block'}
+              label.control-label for="ids" #{r4s ? t.ids_to_r4s : t.ids_to_block}
               .controls
                 textarea#ids.input-xxlarge name="ids"#{@default_ids}
             .control-group
               .controls
-                input.input-xxlarge type="checkbox" name="forgive_friends" value="1" checked="checked" &nbsp;Don't #{r4s ? 'report' : 'block'} users I am following
+                input.input-xxlarge type="checkbox" name="forgive_friends" value="1" checked="checked" &nbsp; #{r4s ? t.dont_r4s_following : t.dont_block_following}
             .form-actions
-              button#submit-ids.btn.btn-danger.btn-large type="submit" <i class="icon-warning-sign icon-white"></i> #{r4s ? 'Report for spam' : 'Block'}
+              button#submit-ids.btn.btn-danger.btn-large type="submit" <i class="icon-warning-sign icon-white"></i> #{r4s ? t.perform_r4s : t.perform_block}
     - else
       .row style="min-height: 100px"
         .span12 style="text-align: center"
@@ -43,4 +43,4 @@ body
             a.btn.center href="/auth/twitter" Sign in with Twitter
   footer.footer
     .container
-      p.pull-right <a href="/?r4s=1">Go to R4S mode</a> / Lovingly made by <a href="http://twitter.com/uasi" target="_blank">@uasi</a>.
+      p.pull-right <a href="/?r4s=1">#{t.go_to_r4s_mode}</a> / Lovingly made by <a href="http://twitter.com/uasi" target="_blank">@uasi</a>.

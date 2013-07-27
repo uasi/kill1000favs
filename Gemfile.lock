@@ -63,6 +63,6 @@ DEPENDENCIES
   sinatra (~> 1.4)
   sinatra-env
   sinatra-flash
-  sinatra-r18n
+  sinatra-r18n (~> 1.1)
   slim (~> 2.0)
   twitter (~> 4.8)

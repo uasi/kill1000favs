@@ -52,6 +52,12 @@ def scan_id(s)
   s.scan(/^\s*@?([a-zA-Z0-9_]+)/).map {|a| a.first }
 end
 
+### Filters
+
+before do
+  session[:locale] = params[:locale] if params[:locale]
+end
+
 ### Actions
 
 get '/' do

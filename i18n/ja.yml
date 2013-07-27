@@ -1,0 +1,10 @@
+site:
+  description: Block them all with a single click
+
+ids_to_block: ブロックするID
+ids_to_r4s: スパム報告するID
+dont_block_following: 自分がフォローしているユーザーはブロックしない
+dont_r4s_following: 自分がフォローしているユーザーはスパム報告しない
+go_to_r4s_mode: スパム報告モードへ
+perform_block: ブロック
+perform_r4s: スパム報告

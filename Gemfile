@@ -10,7 +10,7 @@ ruby '1.9.3'
 # - puma 2.4.0 (no mention in its document but it passes tests on 2.0.0)
 # - slim 2.0.0 (ditto)
 
-# and these do support 2.0:
+# and these do support 2.0.0:
 # - sinatra 1.4.0
 # - omniauth 1.1.4
 # - better_errors 0.9.0
@@ -20,7 +20,7 @@ gem 'puma', '~> 2.4'
 gem 'sinatra', '~> 1.4'
 gem 'sinatra-env'
 gem 'sinatra-flash', require: 'sinatra/flash'
-gem 'sinatra-r18n', '~> 1.1'
+gem 'sinatra-r18n', '~> 1.1', require: 'sinatra/r18n'
 gem 'slim', '~> 2.0'
 gem 'twitter', '~> 4.8'
 gem 'omniauth', '~> 1.1'
