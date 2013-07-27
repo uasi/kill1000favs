@@ -1,5 +1,5 @@
 site:
-  description: Block them all with a single click
+  description: 〜コピペbotとかスパムアカウントとかまとめてブロックするやつ〜
 
 ids_to_block: ブロックするID
 ids_to_r4s: スパム報告するID
