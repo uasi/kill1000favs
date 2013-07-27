@@ -30,7 +30,7 @@ body
             .control-group
               label.control-label for="ids" #{r4s ? t.ids_to_r4s : t.ids_to_block}
               .controls
-                textarea#ids.input-xxlarge name="ids"#{@default_ids}
+                textarea#ids.input-xxlarge name="ids" #{@default_ids}
             .control-group
               .controls
                 input.input-xxlarge type="checkbox" name="forgive_friends" value="1" checked="checked" &nbsp; #{r4s ? t.dont_r4s_following : t.dont_block_following}
@@ -43,4 +43,4 @@ body
             a.btn.center href="/auth/twitter" Sign in with Twitter
   footer.footer
     .container
-      p.pull-right <a href="/?r4s=1">#{t.go_to_r4s_mode}</a> / Lovingly made by <a href="http://twitter.com/uasi" target="_blank">@uasi</a>.
+      p.pull-right <a href="/suggest" target="_blank">#{t.suggest_accounts}</a> / <a href="/?r4s=1">#{t.go_to_r4s_mode}</a> / Lovingly made by <a href="http://twitter.com/uasi" target="_blank">@uasi</a>.

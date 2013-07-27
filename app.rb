@@ -16,6 +16,21 @@ configure :development do
   BetterErrors.application_root = File.expand_path("..", __FILE__)
 end
 
+configure :production do
+  Pony.options = {
+    :via => :smtp,
+    :via_options => {
+      :address => 'smtp.mandrillapp.com',
+      :port => '587',
+      :domain => 'heroku.com',
+      :user_name => ENV['MANDRILL_USERNAME'],
+      :password => ENV['MANDRILL_APIKEY'],
+      :authentication => :plain,
+      :enable_starttls_auto => true
+    }
+  }
+end
+
 # Twitter gem introduces Enumerable#threaded_map, which doesn't work well
 # with threaded server like Puma.
 # We replace that with Enumerable#map as a workaround.
@@ -96,6 +111,35 @@ end
 
 post '/r4s' do
   do_block(true)
+end
+
+get '/suggest' do
+  slim :suggest
+end
+
+post '/suggest' do
+  ids = []
+  (1..5).each do |n|
+    ids << params[:"id#{n}"] || ''
+  end
+  ids = ids.map {|id|
+    id.strip =~ %r{^ (?: @ | https?://twitter\.com/(?:\#!/)? )? ([A-Za-z0-9_]+) (?: /.* )? $ }x
+    $1
+  }.compact.uniq
+  if ids.size < 1
+    flash[:alert] = t.enter_at_least_one_id
+    redirect '/suggest'
+  end
+  id_list_items = ids.map {|id|
+    url = 'https://twitter.com/' + id
+    "<li><a href='#{url}'>#{url}</a></li>"
+  }
+  html_body = "<ul>#{id_list_items.join}</ul>"
+  subject = 'Spam account suggestion by ' + (session[:nickname] || 'an anonymous')
+  from = 'nobody@' + request.host
+  Pony.mail(to: ENV['EMAIL'], from: from, subject: subject, html_body: html_body)
+  flash[:notice] = t.sent_successfully
+  redirect '/suggest'
 end
 
 get '/lists/:name' do

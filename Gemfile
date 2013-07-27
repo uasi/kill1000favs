@@ -7,6 +7,7 @@ ruby '1.9.3'
 # - sinatra-flash 0.3.0
 # - sinatra-r18n 1.1.5
 # - omniauth-twitter 1.0.0
+# - pony 1.5
 # - puma 2.4.0 (no mention in its document but it passes tests on 2.0.0)
 # - slim 2.0.0 (ditto)
 
@@ -25,6 +26,7 @@ gem 'slim', '~> 2.0'
 gem 'twitter', '~> 4.8'
 gem 'omniauth', '~> 1.1'
 gem 'omniauth-twitter', '~> 1.0'
+gem 'pony', '~> 1.5'
 
 group :development do
   gem 'better_errors'
