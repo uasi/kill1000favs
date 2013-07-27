@@ -26,6 +26,7 @@ GEM
       omniauth-oauth (~> 1.0)
     puma (2.4.0)
       rack (>= 1.1, < 2.0)
+    r18n-core (1.1.5)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -37,6 +38,9 @@ GEM
     sinatra-env (0.0.2)
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
+    sinatra-r18n (1.1.5)
+      r18n-core (= 1.1.5)
+      sinatra (>= 1.3)
     slim (2.0.0)
       temple (~> 0.6.5)
       tilt (~> 1.3, >= 1.3.3)
@@ -59,5 +63,6 @@ DEPENDENCIES
   sinatra (~> 1.4)
   sinatra-env
   sinatra-flash
+  sinatra-r18n
   slim (~> 2.0)
   twitter (~> 4.8)
