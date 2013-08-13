@@ -23,6 +23,8 @@ body
       .span12
         form.form-horizontal.well method="POST" action="/suggest"
           .control-group
+            p.span7.offset2 #{t.how_to_suggest}
+          .control-group
             - for n in 1..5 do
               label.control-label for="id#{n}" ID #{n}
               .controls
