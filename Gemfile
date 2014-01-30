@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby '2.1.0'
 
 # As of 2013-07-27, these gems do not officially support Ruby 2.0.0:
 # - sinatra-env 0.0.2
