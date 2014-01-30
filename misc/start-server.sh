@@ -11,7 +11,7 @@ set -x
 cd /app
 
 # Export environment variables
-source .powenv
+. /app/.powenv
 export BUNDLE_PATH=$HOME/bundle
 export PORT=8080
 
