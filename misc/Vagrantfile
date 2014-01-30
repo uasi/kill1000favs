@@ -42,6 +42,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # argument is a set of non-required options.
   config.vm.synced_folder "../", "/app"
 
+  if Vagrant.has_plugin?("vagrant-dns")
+    VagrantDNS::Config.auto_run = false # See https://github.com/BerlinVagrant/vagrant-dns/issues/27
+    config.dns.tld = "dev"
+    config.vm.hostname = "kill1000favs"
+    config.vm.network :private_network, ip: "192.168.33.33"
+  end
+
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
