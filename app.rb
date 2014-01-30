@@ -5,6 +5,7 @@ Bundler.require *[:default, ENV['RACK_ENV']].compact
 
 enable :logging
 enable :sessions
+set :session_secret, 'secret' if development?
 
 use OmniAuth::Builder do
   provider :twitter, ENV['TWITTER_CONSUMER_KEY'],
