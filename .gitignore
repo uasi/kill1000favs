@@ -1,4 +1,5 @@
 .bundle/
+misc/.vagrant/
 vendor/
 tmp/
 .powenv
