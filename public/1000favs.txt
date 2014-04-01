@@ -1,4 +1,18 @@
-### Last updated: 2014-03-08
+### Last updated: 2014-03-20
+
+# -- 2014-03-20
+gazo_takuhai
+anime_bot_
+_trivia_bot_
+animemangabot
+mudabot
+pokemon_bot_
+pokemonbot_
+_anime_bot_
+worldproverb
+animevia
+trend_today
+hozon_pic
 
 # -- 2014-03-08
 wwwBOT2ch
