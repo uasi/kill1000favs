@@ -61,7 +61,7 @@ GEM
       temple (~> 0.6.9)
       tilt (>= 1.3.3, < 2.1)
     temple (0.6.10)
-    tilt (2.0.1)
+    tilt (2.0.2)
     twitter (4.8.1)
       faraday (~> 0.8, < 0.10)
       multi_json (~> 1.0)
